@@ -1,9 +1,8 @@
 channels:
   - pytorch
+  - nvidia/label/cuda-11.8.0
   - conda-forge
-#  - defaults
-
-show_channel_urls: true
+  # - defaults
 
 default_channels:
   - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main
@@ -11,10 +10,18 @@ default_channels:
   - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2
 
 custom_channels:
-  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud
   conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud
 
+show_channel_urls: true
 always_copy: true
-auto_activate_base: true
+auto_activate_base: false
 ssl_verify: false
-# channel_priority: flexible
+
+# proxy_servers:
+#     http: socks5h://127.0.0.1:10800
+#     https: socks5h://127.0.0.1:10800
