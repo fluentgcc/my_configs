@@ -9,15 +9,13 @@
 
 [credential]
 	helper = wincred
+	
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[safe]
-	directory = E:/Work/3D/New
+	
 [user]
 	# name = fluentgcc
 	# email = 1217019920@qq.com
-	name = songhe
-	email = songhe10674@navinfo.com
