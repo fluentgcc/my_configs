@@ -23,5 +23,5 @@ auto_activate_base: false
 ssl_verify: false
 
 # proxy_servers:
-#     http: socks5h://127.0.0.1:10800
-#     https: socks5h://127.0.0.1:10800
+#     http: socks5h://127.0.0.1:7890
+#     https: socks5h://127.0.0.1:7890
