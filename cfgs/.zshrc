@@ -119,7 +119,7 @@ source $ZSH/oh-my-zsh.sh
 # <<< on-my-zsh init <<<
 
 
-# >>> zsh plugin init >>>
+## >>> zsh plugin init >>>
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -132,7 +132,12 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlightin
 # compinit
 # fi
 
-# <<< zsh plugin init <<<
+export HISTSIZE=50000
+export SAVEHIST=50000
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_FIND_NO_DUPS
+## <<< zsh plugin init <<<
 
 # sublime text
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
